@@ -1,0 +1,165 @@
+:root{
+  --light-magenta: hsl(293deg, 100%, 63%);
+  --light-violet: hsl(264deg, 100%, 61%);
+}
+body {
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  background-color: hsl(270, 20%, 96%);
+}
+h1{
+  color: hsl(271, 36%, 24%);
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+span{
+  font-size: 10px;
+  color: hsl(270, 20%, 96%);
+  letter-spacing: 0;
+}
+i{
+  color: white;
+}
+body::before{
+  position: fixed;
+  left:-60px;
+  content: "";
+  background: linear-gradient( hsl(293deg, 100%, 63%) , hsl(264deg, 100%, 61%));
+  width: 500px;
+  height: 649px;
+  z-index: -1;
+  border-radius: 0 0 1000px 1000px;
+}
+body::after{
+  position: fixed;
+  right:-60px;
+  bottom: 0;
+  content: "";
+  background: #f9f4fa;
+  width: 410px;
+  height: 649px;
+  z-index: -1;
+  border-radius: 1000px 1000px 0 0;
+}
+.phone{
+  width: 300px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 30px;
+}
+.screen{
+  border-radius: 30px;
+  background-color: hsl(270, 20%, 96%);
+}
+.header{
+  border-radius: 30px 30px 0 0;
+  background: linear-gradient(to right, var(--light-violet), var(--light-magenta));
+}
+.notch{
+  width: 50%;
+  border-radius:0 0 30px 30px;
+  height: 20px;
+  margin: auto;
+  background-color: white;
+}
+.header img{
+  width:35px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+.header p{
+  flex:0.8;
+  color:white;
+  font-weight: 500;
+  font-size: 12px;
+}
+.chat p{
+  max-width: 185px;
+  font-size: 12px;
+  color: hsl(276, 55%, 52%);
+  background-color: hsl(272deg 41% 93%);
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.sender p{
+  background-color: white;
+  color: hsl(271, 15%, 43%);
+}
+.dog img{
+  width: 55px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.send{
+  background-color: white;
+  height: 35px;
+  border-radius: 35px;
+  padding: 5px 5px 5px 10px;
+}
+.send span{
+  color: hsl(206, 6%, 79%);
+}
+.send i{
+  background-color: black;
+  border-radius: 100%;
+  padding: 5px 10px;
+}
+.price p{
+  background: linear-gradient(to left, var(--light-violet), var(--light-magenta));
+  color: white;
+}
+.price i{
+  padding: 0 5px;
+}
+.price span{
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  flex-grow: 1;
+}
+.intro p{
+  color: hsl(270, 7%, 64%);
+  max-width: 305px;
+  margin: auto;
+}
+@media screen and (min-width:930px){
+  .intro p{
+    max-width:435px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+/* #### Text
+
+- Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%)
+- Moderate Violet (chat on the left): hsl(276, 55%, 52%)
+- Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%)
+- Grayish Blue (placeholder text): hsl(206, 6%, 79%)
+- Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%)
+- Dark Grayish Violet (paragraph): hsl(270, 7%, 64%)
+
+#### Gradients
+
+These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
+
+- Light Magenta: hsl(293, 100%, 63%)
+- Light Violet: hsl(264, 100%, 61%)
+
+### Secondary
+
+- White: hsl(0, 0%, 100%)
+- Light Grayish Violet (app background): hsl(270, 20%, 96%)
+- Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%)
+- Very Light Magenta (radio button outline): hsl(289, 100%, 72%) */
